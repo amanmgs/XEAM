@@ -19,7 +19,7 @@ export default class Main extends React.Component {
   latlong = () => {
     const address = this.state.City +' , '+this.state.State +' , '+this.state.Country // concatenate city, state, country into one string
     // Initialize the module (needs to be done only once)
-    Geocoder.init("AIzaSyBT2yAQ3xwRG6Z-x-E3VisLgbNdqiGVQa0", {language : "en"}); // use a valid API key & set the language
+    Geocoder.init("XXXXXXXXXXXXXXXXXXXXXXXXXXXX", {language : "en"}); // use a valid API key & set the language
     
     // Search by address ang get location
     Geocoder.from(address)
